@@ -94,6 +94,12 @@
                             <outlet property="delegate" destination="WYW-bU-SUC" id="Tj0-j1-rD6"/>
                         </connections>
                     </tableView>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Jig-vG-9nT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh:" destination="WYW-bU-SUC" eventType="valueChanged" id="TaS-i9-fkY"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
                         <segue destination="8Mt-3K-YFw" kind="show" identifier="showTimelineDetailViewController" id="a8V-RR-G4Z"/>
                     </connections>
